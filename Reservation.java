@@ -102,9 +102,8 @@ class Reservation
                     System.out.print("Number of guests: ");
                     int numberOfGuests = scanner.nextInt();
                     scanner.nextLine();
-
-                    Reservation reservation = reservationSystem.makeReservation(name, date, numberOfGuests);
-                    System.out.println("Reservation made with ID " + reservation.getId());
+                     Reservation reservation = reservationSystem.makeReservation(name, date, numberOfGuests);
+                     System.out.println("Reservation made with ID " + reservation.getId());
                     break;
                 case 2:
                     System.out.println("Reservations:");
@@ -128,7 +127,7 @@ class Reservation
                 default:
                     System.out.println("Invalid choice");
             }
-               scanner.close();
+             //  scanner.close();
             System.out.println();
         }
     }
